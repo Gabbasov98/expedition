@@ -121,6 +121,9 @@ input[type="date"]:valid::before {
         align-items: center;
         font-size: 18px;
         border: none;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
         &.selected,
         &:hover{
             font-weight: 400;
@@ -262,10 +265,15 @@ input[type="date"]:valid::before {
         .nice-select ,
         input{
             height: 52px;
+            font-size: 14px;
         }
         textarea{
             border-radius: 30px;
             height: 357px;
+        }
+        .option{
+            font-size: 12px;
+            height: 35px;
         }
     }
 

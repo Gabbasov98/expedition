@@ -1,0 +1,51 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Новости", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        <header class="header header--page">
+            @@include('components/page-blocks/_header.html')
+            <div class="header__img">
+                <img src="img/faces2.webp" alt="">
+            </div>
+        </header>
+        <main class="content">
+            <section class="news-page inner-page">
+                <div class="container">
+                    <div class="news-page__title display1">Новости</div>
+                    <div class="news-page__items">
+                        <a href="" class="news-card">
+                            @@include('components/cards/_news-card.html',{"img":"news","date":"15.08.2022","desc":"Всероссийский конкурс «Моя страна – моя Россия» приглашает в путешествие"})
+                        </a>
+                        <a href="" class="news-card">
+                            @@include('components/cards/_news-card.html',{"img":"news2","date":"24.08.2022","desc":"В Москве подвели итоги Всероссийской просветительской онлайн-экспедиции «Моя страна – моя Россия»"})
+                        </a>
+                        <a href="" class="news-card">
+                            @@include('components/cards/_news-card.html',{"img":"news3","date":"10.09.2022","desc":"Приветствие Константина Ильича Могилевского, Председателя Правления Российского исторического общества"})
+                        </a>
+                        <a href="" class="news-card">
+                            @@include('components/cards/_news-card.html',{"img":"news4","date":"10.09.2022","desc":"Приветствие Константина Ильича Могилевского, Председателя Правления Российского исторического общества"})
+                        </a>
+                        <a href="" class="news-card">
+                            @@include('components/cards/_news-card.html',{"img":"news","date":"15.08.2022","desc":"Всероссийский конкурс «Моя страна – моя Россия» приглашает в путешествие"})
+                        </a>
+                        <a href="" class="news-card">
+                            @@include('components/cards/_news-card.html',{"img":"news2","date":"24.08.2022","desc":"В Москве подвели итоги Всероссийской просветительской онлайн-экспедиции «Моя страна – моя Россия»"})
+                        </a>
+                        <a href="" class="news-card">
+                            @@include('components/cards/_news-card.html',{"img":"news3","date":"10.09.2022","desc":"Приветствие Константина Ильича Могилевского, Председателя Правления Российского исторического общества"})
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            @@include('components/page-blocks/_footer.html')
+        </footer>
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

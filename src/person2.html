@@ -1,0 +1,44 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"личный кабинет", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        <header class="header header--page">
+            @@include('components/page-blocks/_header.html')
+            <div class="header__img">
+                <img src="img/faces2.webp" alt="">
+            </div>
+        </header>
+        <main class="content">
+            <section class="person inner-page">
+                <div class="container">
+                    <div class="person__title display1">личный кабинет лектора экспедиции</div>
+                    <div class="person__thank">
+                        <div class="person__subtitle text-large">
+                            <strong>Поздравляем</strong>
+                        </div>
+                        <div class="person__desc text-large">
+                            <p>Ваша заявка на участие в Конкурсе-смотре интерактивных онлайн-занятий (лекций и семинаров с участием слушателей) об исторических персонах различных регионов Российской Федерации отправлена.</p>
+                            <p>Дальнейшая информация будет направляться на указанную в заявке электронную почту</p>
+                        </div>
+                    </div>
+                    <a href="" class="person__back btn btn-white-outline">
+                        <svg width="36" height="13" viewBox="0 0 36 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.31012 7.22572C-0.103372 6.82491 -0.103372 6.17509 0.31012 5.77429L5.95712 0.300606C6.37062 -0.100196 7.04102 -0.100196 7.45451 0.300606C7.868 0.701406 7.868 1.35123 7.45451 1.75204L2.5562 6.5L7.45451 11.248C7.868 11.6488 7.868 12.2986 7.45451 12.6994C7.04102 13.1002 6.37062 13.1002 5.95712 12.6994L0.31012 7.22572Z" fill="#6080AF"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.000488417 6.49981C0.000488492 5.93299 0.474535 5.47349 1.0593 5.47349L34.9413 5.4735C35.5261 5.4735 36.0001 5.93299 36.0001 6.49981C36.0001 7.06663 35.5261 7.52613 34.9413 7.52613L1.0593 7.52612C0.474535 7.52612 0.000488342 7.06663 0.000488417 6.49981Z" fill="#6080AF"/>
+                        </svg>
+                        <span>На главную</span>
+                    </a>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            @@include('components/page-blocks/_footer.html')
+        </footer>
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

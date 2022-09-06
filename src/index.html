@@ -1,0 +1,341 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Главная", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            @@include('components/page-blocks/_header.html')
+            <div class="header__img">
+                <img src="img/faces.webp" alt="">
+            </div>
+        </header>
+        <main class="content">
+
+            <section class="about">
+                <div class="container">
+                    <div class="about__title display1">об Экспедиции</div>
+                    <div class="about__inner">
+                        <div class="about__left">
+                            <div class="about__desc subtitle1">Третий год вся страна отправляется в путешествие со Всероссийской просветительской онлайн-экспедицией «Моя страна – моя Россия».</div>
+                            <div class="about__video">
+                                <video class="video" poster="img/video.webp">
+                                    <source src="videos/Countdown7.mp4"  type="video/mp4">
+                                </video>
+<!--                                <img src="img/video.webp" alt="">-->
+                                <div class="about__play">
+                                    <svg width="97" height="110" viewBox="0 0 97 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.75" d="M91.5 45.4737C98.8333 49.7076 98.8333 60.2924 91.5 64.5263L16.5 107.828C9.16665 112.061 -5.41012e-06 106.769 -5.03998e-06 98.3013L-1.25446e-06 11.6987C-8.84321e-07 3.23091 9.16666 -2.06146 16.5 2.17245L91.5 45.4737Z" fill="#D1DCF1"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about__right">
+                            <div class="about__bg">
+                                <img class="about__bg-desktop" src="img/about-bg.png" alt="">
+                                <img class="about__bg-mob" src="img/about-bg2.svg" alt="">
+                            </div>
+                            <div class="about__text body-text">
+                                <p>Еще в 2019 году члены <strong>Ассоциации выпускников Всероссийского конкурса «Моя страна – моя Россия»</strong> задумали отправиться на поезде от Владивостока до Калининграда, чтобы встретиться со школьниками и педагогами и поделиться своими знаниями и опытом реализации интересных проектов.</p>
+                                <p>В 2020 году при поддержке <strong>Федерального агентства по делам национальностей</strong> проект впервые был реализован в онлайн-формате, обретя своих верных попутчиков.</p>
+                                <p>Во втором сезоне Экспедиция обрела тематическое направление – им стал этнографический туризм.</p>
+                                <p>В 2022 году мы отправимся в настоящее путешествие во времени и познакомимся с <strong>историческими персонами регионов</strong> нашей большой страны.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="nums">
+                <div class="container">
+                    <div class="nums__items">
+                        <div class="nums__item">
+                            @@include('components/cards/_nums-card.html',{"icon":"num-icon","title":"<span class='nums__title-big'>3</span>","desc":"года в путешествии"})
+                            <div class="nums__line">
+                                <img src="img/line.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="nums__item">
+                            @@include('components/cards/_nums-card.html',{"icon":"num-icon2","title":"<span class='nums__title-big'>\>150</span>","desc":"онлайн-лекций об исторических, культурных и национальных особенностях всех регионов России"})
+                            <div class="nums__line">
+                                <img src="img/line2.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="nums__item">
+                            @@include('components/cards/_nums-card.html',{"icon":"num-icon3","title":"<span class='nums__title-big'>1,5</span><span class='nums__title-small'> млн</span>","desc":"зрителей, присоединившихся к путешествию в социальных сетях"})
+                            <div class="nums__line">
+                                <img src="img/line3.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="nums__item">
+                            @@include('components/cards/_nums-card.html',{"icon":"num-icon5","title":"<img src='img/play.svg' alt=''>","desc":"Единая открытая база видеоматериалов, формируемая по итогам Экспедиции "})
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="competition">
+                <div class="container">
+                    <div class="competition__inner">
+                        <div class="competition__show">
+                            <div class="competition__title display1">Конкурс лекторов Экспедиции</div>
+                            <div class="competition__desc text-large">Лекторы Экспедиции – это: </div>
+                            <ul class="competition__list mlist body-text">
+                                <li>специалисты системы государственной национальной политики,</li>
+                                <li>педагоги общеобразовательных организаций,</li>
+                                <li>педагоги профессиональных образовательных организаций,</li>
+                                <li>преподаватели образовательных организаций высшего образования,</li>
+                                <li>педагоги дополнительного образования,</li>
+                                <li>работники учреждений культуры,</li>
+                                <li>ученые,</li>
+                                <li>общественные деятели,</li>
+                                <li>специалисты по работе с детьми и молодежью некоммерческих организаций.</li>
+                            </ul>
+                            <div class="competition__desc2 text-large">
+                                Лекторы Экспедиции отбираются в рамках <strong>Конкурса-смотра интерактивных онлайн-занятий</strong> (лекций и семинаров с участием слушателей) об исторических персонах различных регионов Российской Федерации.
+                            </div>
+                        </div>
+                        <div class="competition__hidden">
+                            <div class="reqs">
+                                <div class="reqs__title text-large">Минимальные требования к лекторам:</div>
+                                <div class="reqs__items">
+                                    <div class="reqs__item">
+                                        <img src="img/reqs.svg" alt="">
+                                        <div class="reqs__desc body-text">высшее образование</div>
+                                    </div>
+                                    <div class="reqs__item">
+                                        <img src="img/reqs2.svg" alt="">
+                                        <div class="reqs__desc body-text">наличие опыта преподавательской или просветительской деятельности</div>
+                                    </div>
+                                    <div class="reqs__item">
+                                        <img src="img/reqs3.svg" alt="">
+                                        <div class="reqs__desc body-text">наличие опыта участия в онлайн-мероприятиях в качестве спикера</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="steps">
+                                <div class="steps__title text-large">Чтобы стать лектором Экспедиции, необходимо:</div>
+                                <div class="steps__items">
+                                    <div class="steps__item">
+                                        <div class="steps__num">1</div>
+                                        <div class="steps__text">
+                                            <div class="steps__desc body-text">зайти в Личный кабинет лектора на сайте Экспедиции</div>
+                                        </div>
+                                    </div>
+                                    <div class="steps__item">
+                                        <div class="steps__num">2</div>
+                                        <div class="steps__text">
+                                            <div class="steps__desc body-text">
+                                                <span>
+                                                    <strong>до 20 октября 2022</strong> года подать заявку на участие в Конкурсе-смотре, направив материалы согласно представленным требованиям
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="steps__item">
+                                        <div class="steps__num">3</div>
+                                        <div class="steps__text">
+                                            <div class="steps__desc body-text">пройти конкурсный отбор</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="materials">
+                                <div class="materials__title text-large">Требования к материалам заявки:</div>
+                                <ul class="competition__list materials__list mlist body-text">
+                                    <li>персональные данные о кандидате должны быть достоверными и полными, так как запрашиваемая информация необходима для дальнейшей связи с участниками Конкурса-смотра;</li>
+                                    <li>на прикрепляемом к заявке фото должно быть хорошо видно лицо участника Конкурса-смотра;</li>
+                                    <li>графа «Краткое содержание лекции» должна содержать описание лекции, которую планирует провести участник Конкурса-смотра в рамках Экспедиции;</li>
+                                    <li>графа «Материалы лекции» должна содержать текстовые, презентационные и медиафайлы к занятию по усмотрению участника. Например: план и презентация занятия, видео с фрагментом занятия, фото;</li>
+                                    <li>графа «Ссылки на дополнительные файлы по лекции» могут содержать ссылки на файлы, относящиеся к материалам урока, размещенные в сети Интернет. Участник Конкурса-смотра может прикреплять ссылки на облачные хранилища (Яндекс.Диск, Google Диск) с размещенными на них дополнительными материалами.</li>
+                                </ul>
+
+                                <div class="materials__items body-text">
+                                    <p class="materials__item">
+                                        <i class="materials__item-icon">
+                                            <img src="img/material-icon.svg" alt="">
+                                        </i>
+                                        <span>Материал лекций должен соответствовать Указу Президента Российской Федерации «О Стратегии государственной национальной политики Российской Федерации на период до 2025 года (с изменениями на 6 декабря 2018 года)».</span>
+                                    </p>
+                                    <p class="materials__item">
+                                        <i class="materials__item-icon">
+                                            <img src="img/material-icon2.svg" alt="">
+                                        </i>
+                                        <span>Длительность урока – основная часть: 35 минут, до 15 минут – ответы на вопросы.</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="competition__link btn-link">
+                                <a href="" class="btn-link-toggle">
+                                    <svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.50002 0C9.06352 7.488e-06 9.52032 0.457288 9.52031 1.02137L9.52017 11.7334L10.5809 10.6646C10.978 10.2644 11.6241 10.2623 12.0238 10.6599C12.4236 11.0574 12.4257 11.7041 12.0285 12.1043L9.22366 14.9305C9.03212 15.1235 8.77159 15.232 8.49983 15.232C8.22806 15.232 7.96753 15.1235 7.776 14.9305L4.97111 12.1043C4.57397 11.7041 4.57608 11.0574 4.97584 10.6599C5.3756 10.2623 6.02163 10.2644 6.41877 10.6646L7.47955 11.7334L7.47969 1.02134C7.4797 0.457261 7.93651 -7.42694e-06 8.50002 0ZM2.04062 8.63721H4.76016C5.32366 8.63721 5.78047 8.17993 5.78047 7.61586C5.78047 7.05178 5.32366 6.59451 4.76016 6.59451H1.95527C1.43453 6.59451 0.936486 6.803 0.570325 7.17195C0.204387 7.54067 0 8.03935 0 8.55793V17.0366C0 17.2935 0.0502131 17.548 0.147936 17.7858C0.245665 18.0235 0.389083 18.2399 0.570326 18.4226C0.751585 18.6052 0.967132 18.7504 1.20484 18.8496C1.44256 18.9489 1.69758 19 1.95528 19H15.0447C15.3024 19 15.5574 18.9489 15.7952 18.8496C16.0329 18.7504 16.2484 18.6052 16.4297 18.4226C16.6109 18.2399 16.7543 18.0235 16.8521 17.7858C16.9498 17.548 17 17.2935 17 17.0366V8.55793C17 8.03936 16.7956 7.54067 16.4297 7.17195C16.0635 6.803 15.5655 6.59451 15.0447 6.59451H12.2398C11.6763 6.59451 11.2195 7.05178 11.2195 7.61586C11.2195 8.17993 11.6763 8.63721 12.2398 8.63721H14.9594V16.9573H2.04062V8.63721Z" fill="#3E638C"/>
+                                    </svg>
+                                    <span>Положение о Конкурсе-смотре</span>
+                                </a>
+                            </div>
+
+                            <button class="competition__btn btn btn-red">Подать заявку на Конкурс-смотр </button>
+                        </div>
+                        <button class="competition__more btn btn-red">Подробнее</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="road">
+                <div class="container">
+                    <div class="road__title display1">Расписание маршрута</div>
+                    <div class="road__items">
+                        <div class="road-card">
+                            @@include('components/cards/_road-card.html',{"num":"01","date":"<span>c 12.09.2022</span><span>по 20.10.2022</span>","text":"<strong>Прием заявок</strong> на Конкурс-смотр интерактивных онлайн-занятий (лекций и семинаров с участием слушателей) об исторических персонах различных регионов Российской Федерации"})
+                            <img src="img/road-icon.svg" alt="" class="road-card__icon">
+                            <img src="img/road-icon4.svg" alt="" class="road-card__icon2">
+                        </div>
+                        <div class="road-card">
+                            @@include('components/cards/_road-card.html',{"num":"02","date":"<span>c 21.10.2022</span><span>по 31.10.2022</span>","text":"<strong>Отбор лекторов Экспедиции</strong> по итогам Конкурса-смотра интерактивных онлайн-занятий (лекций и семинаров с участием слушателей) об исторических персонах различных регионов Российской Федерации "})
+                            <img src="img/road-icon2.svg" alt="" class="road-card__icon">
+                            <img src="img/road-icon5.svg" alt="" class="road-card__icon2">
+                        </div>
+                        <div class="road-card">
+                            @@include('components/cards/_road-card.html',{"num":"03","date":"<span>11.11.2022</span>","text":"<strong>Старт онлайн-лекций</strong> в рамках III Всероссийской просветительской онлайн-экспедиции «Моя страна – моя Россия» (История в лицах моей страны)"})
+                            <img src="img/road-icon3.svg" alt="" class="road-card__icon">
+                            <img src="img/road-icon6.svg" alt="" class="road-card__icon2">
+                        </div>
+                        <div class="road-card">
+                            @@include('components/cards/_road-card.html',{"num":"04","date":"<span>середина <br> декабря 2022 </span>","text":"Завершение III Всероссийской просветительской онлайн-экспедиции «Моя страна – моя Россия» (История в лицах моей страны). <strong>Награждение лучших лекторов.</strong>"})
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="memory">
+                <div class="container">
+                    <div class="memory__title display1">Воспоминания из путешествий</div>
+                    <div class="memory__items">
+                        <div class="memory__item">
+                            <div class="memory__item-inner">
+                                <div class="memory__subtitle">Всероссийская просветительская онлайн-экспедиция «Моя страна – моя Россия»</div>
+                                <div class="memory__link brown-link">
+                                    <a href="" class="brown-link__toggle">
+                                        <span>Cмотреть лекции</span>
+                                        <svg width="21" height="10" viewBox="0 0 21 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1893 0L21 5L16.1893 10L15.4639 9.27919L19.0851 5.51551H0V4.48449H19.0851L15.4639 0.720805L16.1893 0Z" fill="#905B3B"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="memory__item">
+                            <div class="memory__item-inner">
+                                <div class="memory__subtitle">II Всероссийская просветительская онлайн-экспедиция «Моя страна – моя Россия»</div>
+                                <div class="memory__link brown-link">
+                                    <a href="" class="brown-link__toggle">
+                                        <span>Cмотреть лекции</span>
+                                        <svg width="21" height="10" viewBox="0 0 21 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1893 0L21 5L16.1893 10L15.4639 9.27919L19.0851 5.51551H0V4.48449H19.0851L15.4639 0.720805L16.1893 0Z" fill="#905B3B"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="news">
+                <div class="container">
+                    <div class="news__title display1">Новости</div>
+                    <div class="news__slider">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <a href="" class="swiper-slide news-card">
+                                    @@include('components/cards/_news-card.html',{"img":"news","date":"15.08.2022","desc":"Всероссийский конкурс «Моя страна – моя Россия» приглашает в путешествие"})
+                                </a>
+                                <a href="" class="swiper-slide news-card">
+                                    @@include('components/cards/_news-card.html',{"img":"news2","date":"24.08.2022","desc":"В Москве подвели итоги Всероссийской просветительской онлайн-экспедиции «Моя страна – моя Россия»"})
+                                </a>
+                                <a href="" class="swiper-slide news-card">
+                                    @@include('components/cards/_news-card.html',{"img":"news3","date":"10.09.2022","desc":"Приветствие Константина Ильича Могилевского, Председателя Правления Российского исторического общества"})
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="news__all btn btn-white-outline">Все новости</a>
+                </div>
+            </section>
+
+            <section class="media">
+                <div class="container">
+                    <div class="media__title display1">СМИ об Экспедиции</div>
+                    <div class="media__items">
+                        <div class="media__item">
+                            <img src="img/media.webp" alt="">
+                        </div>
+                        <div class="media__item">
+                            <img src="img/media2.webp" alt="">
+                        </div>
+                        <div class="media__item">
+                            <img src="img/media3.webp" alt="">
+                        </div>
+                        <div class="media__item">
+                            <img src="img/media4.webp" alt="">
+                        </div>
+                        <div class="media__item">
+                            <img src="img/media5.webp" alt="">
+                        </div>
+                        <div class="media__item">
+                            <img src="img/media6.webp" alt="">
+                        </div>
+                        <div class="media__item">
+                            <img src="img/media7.webp" alt="">
+                        </div>
+                        <div class="media__item">
+                            <img src="img/media8.webp" alt="">
+                        </div>
+                        <div class="media__item">
+                            <img src="img/media9.webp" alt="">
+                        </div>
+                        <div class="media__item">
+                            <img src="img/media10.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="partners">
+                <div class="container">
+                    <div class="partners__title display1">Организаторы и партнёры</div>
+                    <div class="partners__items">
+                        <div class="partners__item">
+                            <img src="img/partners.webp" alt="">
+                        </div>
+                        <div class="partners__item">
+                            <img src="img/partners2.webp" alt="">
+                        </div>
+                        <div class="partners__item">
+                            <img src="img/partners3.webp" alt="">
+                        </div>
+                        <div class="partners__item">
+                            <img src="img/partners4.webp" alt="">
+                        </div>
+                        <div class="partners__item">
+                            <img src="img/partners5.webp" alt="">
+                        </div>
+                        <div class="partners__item">
+                            <img src="img/partners6.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            @@include('components/page-blocks/_footer.html')
+        </footer>
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

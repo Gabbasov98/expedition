@@ -1,0 +1,48 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Главная", "description":"", "keywords":"",})
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body>
+
+    <div class="wrapper" style="padding: 50px;">
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+        <a href="person.html" style="display: block; margin-bottom: 20px;">
+            личный кабинет лектора экспедиции
+        </a>
+        <a href="person2.html" style="display: block; margin-bottom: 20px;">
+            личный кабинет лектора экспедиции 2
+        </a>
+        <a href="news.html" style="display: block; margin-bottom: 20px;">
+            Новости
+        </a>
+        <a href="news-page.html" style="display: block; margin-bottom: 20px;">
+            Новости 2
+        </a>
+        <a href="memories.html" style="display: block; margin-bottom: 20px;">
+            воспоминания
+            из путешествий
+        </a>
+
+
+    </div>
+
+    @@include('components/_popups.html')
+    <!--  -->
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

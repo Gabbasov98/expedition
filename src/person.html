@@ -1,0 +1,251 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"личный кабинет", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        <header class="header header--page">
+            @@include('components/page-blocks/_header.html')
+            <div class="header__img">
+                <img src="img/faces2.webp" alt="">
+            </div>
+        </header>
+        <main class="content">
+            <section class="person inner-page">
+                <div class="container">
+                    <div class="person__title display1">личный кабинет лектора экспедиции</div>
+                    <form class="person__inner">
+                        <div class="person__fio">
+                            <fieldset class="form-group">
+                                <label>
+                                    Фамилия
+                                    <span>*</span>
+                                </label>
+                                <input type="text">
+                            </fieldset>
+                            <fieldset class="form-group">
+                                <label>
+                                    Имя
+                                    <span>*</span>
+                                </label>
+                                <input type="text">
+                            </fieldset>
+                            <fieldset class="form-group">
+                                <label>
+                                    Отчество
+                                    <span>*</span>
+                                </label>
+                                <input type="text">
+                            </fieldset>
+                        </div>
+                        <fieldset class="form-group person__region">
+                            <label>
+                                Субъект Российской Федерации*
+                                <span>*</span>
+                            </label>
+                            <div class="select">
+                                <select>
+                                    <option selected hidden disabled></option>
+                                    <option>Алтайский край</option>
+                                    <option>Амурская область</option>
+                                    <option>Архангельская область</option>
+                                    <option>Астраханская область</option>
+                                    <option>Белгородская область</option>
+                                    <option>Брянская область</option>
+                                    <option>Владимирская область</option>
+                                    <option>Ханты-Мансийский автономный округ — Югра</option>
+                                    <option>Вологодская область</option>
+                                    <option>Воронежская область</option>
+                                </select>
+                            </div>
+                        </fieldset>
+                        <fieldset class="person__file form-group file-input">
+                            <label>
+                                Фото
+                                <span>*</span>
+                            </label>
+                            <div class="file-input__grid">
+                                <div class="file-input__left">
+                                    <div class="file-input__area">
+                                        <div class="file-input__field">
+                                            <input type="file">
+                                            <span>Выберите файл</span>
+                                            <svg width="16" height="23" viewBox="0 0 16 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 7.64727C1.00359 5.88536 1.74264 4.19658 3.05533 2.95071C4.36802 1.70484 6.14739 1.00341 8.00381 1C9.85835 1.00256 11.6362 1.70291 12.9475 2.94751C14.2589 4.19212 14.9968 5.87942 14.9995 7.63955V17.568C15.0084 18.1414 14.8983 18.711 14.6753 19.244C14.4524 19.7771 14.121 20.2633 13.7001 20.6748C13.2791 21.0863 12.7769 21.4151 12.2221 21.6424C11.6673 21.8697 11.0708 21.991 10.4666 21.9995C10.4211 22.0002 10.3757 22.0002 10.3303 21.9995C9.09486 21.9971 7.91076 21.5303 7.03718 20.7012C6.16361 19.8721 5.67172 18.7483 5.6692 17.5757V7.16861C5.66017 6.58953 5.89388 6.03076 6.31892 5.61523C6.74397 5.19969 7.32553 4.96143 7.93567 4.95285C7.95839 4.95253 7.98111 4.95253 8.00383 4.95285C8.61397 4.94428 9.20271 5.16609 9.64053 5.5695C10.0784 5.97291 10.3294 6.52486 10.3384 7.10394C10.3388 7.12551 10.3388 7.14706 10.3384 7.16861L10.2978 18.0158" stroke="#6080AF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="file-input__right">
+                                    <ul class="file-input__hint">
+                                        <li>Размер фото не менее 900х900 рх</li>
+                                        <li>На фото должно быть хорошо видно лицо (портреты предпочтительны)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label>
+                                Место работы/учебы
+                                <span>*</span>
+                            </label>
+                            <input type="text">
+                        </fieldset>
+                        <div class="person__double">
+                            <fieldset class="form-group person__region">
+                                <label>
+                                    Субъект Российской Федерации*
+                                    <span>*</span>
+                                </label>
+                                <div class="select">
+                                    <select>
+                                        <option selected hidden disabled></option>
+                                        <option>Среднее</option>
+                                        <option>Средне-специальное</option>
+                                        <option>Высшее</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+                            <fieldset class="form-group">
+                                <label>
+                                    Должность
+                                    <span>*</span>
+                                </label>
+                                <input type="text">
+                            </fieldset>
+                        </div>
+                        <div class="person__double">
+                            <fieldset class="form-group">
+                                <label>
+                                    Ученая степень, научное звание <br> (при наличии)
+                                </label>
+                                <input type="text">
+                            </fieldset>
+                            <fieldset class="form-group">
+                                <label>
+                                    Награды и поощрения (государственные, ведомственные, общественные)
+                                </label>
+                                <input type="text">
+                            </fieldset>
+                        </div>
+                        <div class="person__contacts">
+                            <fieldset class="form-group">
+                                <label>
+                                    Дата рождения
+                                    <span>*</span>
+                                </label>
+                                <input type="date" data-placeholder="__ . __ . ____" required aria-required="true">
+                            </fieldset>
+                            <fieldset class="form-group">
+                                <label>
+                                    Телефон
+                                    <span>*</span>
+                                </label>
+                                <input type="tel">
+                            </fieldset>
+                            <fieldset class="form-group">
+                                <label>
+                                    E-mail
+                                    <span>*</span>
+                                </label>
+                                <input type="email">
+                            </fieldset>
+                        </div>
+                        <fieldset class="form-group">
+                            <label>
+                                Тема лекции
+                                <span>*</span>
+                            </label>
+                            <input type="text">
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label>
+                                Краткое содержание лекции
+                                <span>*</span>
+                            </label>
+                            <textarea></textarea>
+                        </fieldset>
+                        <fieldset class="person__file form-group file-input">
+                            <label>
+                                Материалы лекции
+                            </label>
+                            <div class="file-input__grid">
+                                <div class="file-input__left">
+                                    <div class="file">
+                                        <span>f5d43c25-749...pdf</span>
+                                        <img src="img/check2.svg" alt="">
+                                    </div>
+                                    <div class="file">
+                                        <span>IMG_1878.JPG</span>
+                                        <img src="img/check2.svg" alt="">
+                                    </div>
+                                    <div class="file-input__area">
+                                        <div class="file-input__field">
+                                            <input type="file">
+                                            <span>Выберите файл</span>
+                                            <svg width="16" height="23" viewBox="0 0 16 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 7.64727C1.00359 5.88536 1.74264 4.19658 3.05533 2.95071C4.36802 1.70484 6.14739 1.00341 8.00381 1C9.85835 1.00256 11.6362 1.70291 12.9475 2.94751C14.2589 4.19212 14.9968 5.87942 14.9995 7.63955V17.568C15.0084 18.1414 14.8983 18.711 14.6753 19.244C14.4524 19.7771 14.121 20.2633 13.7001 20.6748C13.2791 21.0863 12.7769 21.4151 12.2221 21.6424C11.6673 21.8697 11.0708 21.991 10.4666 21.9995C10.4211 22.0002 10.3757 22.0002 10.3303 21.9995C9.09486 21.9971 7.91076 21.5303 7.03718 20.7012C6.16361 19.8721 5.67172 18.7483 5.6692 17.5757V7.16861C5.66017 6.58953 5.89388 6.03076 6.31892 5.61523C6.74397 5.19969 7.32553 4.96143 7.93567 4.95285C7.95839 4.95253 7.98111 4.95253 8.00383 4.95285C8.61397 4.94428 9.20271 5.16609 9.64053 5.5695C10.0784 5.97291 10.3294 6.52486 10.3384 7.10394C10.3388 7.12551 10.3388 7.14706 10.3384 7.16861L10.2978 18.0158" stroke="#6080AF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="file-input__right">
+                                    <div class="file-input__hint">
+                                        <p>Текстовые, презентационные и медиафайлы к занятию по усмотрению участника. Например: план и презентация занятия, видео с фрагментом занятия, фото</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div class="person__group form-group">
+                            <label>Ссылки на дополнительные файлы по лекции</label>
+                            <fieldset class="person__field">
+                                <input type="text">
+                                <button class="person__add-field" type="button">
+                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.2425 11.5575C19.6291 11.5575 19.9425 11.2441 19.9425 10.8575V10.1425C19.9425 9.7559 19.6291 9.4425 19.2425 9.4425H12.2575C11.8709 9.4425 11.5575 9.1291 11.5575 8.7425V1.7575C11.5575 1.3709 11.2441 1.0575 10.8575 1.0575H10.1425C9.7559 1.0575 9.4425 1.3709 9.4425 1.7575V8.7425C9.4425 9.1291 9.1291 9.4425 8.7425 9.4425H1.7575C1.3709 9.4425 1.0575 9.7559 1.0575 10.1425L1.0575 10.8575C1.0575 11.2441 1.3709 11.5575 1.7575 11.5575H8.7425C9.1291 11.5575 9.4425 11.8709 9.4425 12.2575L9.4425 19.2425C9.4425 19.6291 9.7559 19.9425 10.1425 19.9425H10.8575C11.2441 19.9425 11.5575 19.6291 11.5575 19.2425V12.2575C11.5575 11.8709 11.8709 11.5575 12.2575 11.5575H19.2425Z" fill="#6080AF"/>
+                                    </svg>
+                                </button>
+                            </fieldset>
+                        </div>
+                        <div class="person__group form-group">
+                            <label>Ссылки на материалы о деятельности конкурсанта по воспитанию и просвещению молодежи в области истории родного края </label>
+                            <fieldset class="person__field">
+                                <input type="text">
+                                <button class="person__add-field" type="button">
+                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.2425 11.5575C19.6291 11.5575 19.9425 11.2441 19.9425 10.8575V10.1425C19.9425 9.7559 19.6291 9.4425 19.2425 9.4425H12.2575C11.8709 9.4425 11.5575 9.1291 11.5575 8.7425V1.7575C11.5575 1.3709 11.2441 1.0575 10.8575 1.0575H10.1425C9.7559 1.0575 9.4425 1.3709 9.4425 1.7575V8.7425C9.4425 9.1291 9.1291 9.4425 8.7425 9.4425H1.7575C1.3709 9.4425 1.0575 9.7559 1.0575 10.1425L1.0575 10.8575C1.0575 11.2441 1.3709 11.5575 1.7575 11.5575H8.7425C9.1291 11.5575 9.4425 11.8709 9.4425 12.2575L9.4425 19.2425C9.4425 19.6291 9.7559 19.9425 10.1425 19.9425H10.8575C11.2441 19.9425 11.5575 19.6291 11.5575 19.2425V12.2575C11.5575 11.8709 11.8709 11.5575 12.2575 11.5575H19.2425Z" fill="#6080AF"/>
+                                    </svg>
+                                </button>
+                            </fieldset>
+                        </div>
+                        <div class="person__group form-group">
+                            <label>Ссылки на авторские публикации конкурсанта (статьи, книги, брошюры и т.д.)</label>
+                            <fieldset class="person__field">
+                                <input type="text">
+                                <button class="person__add-field" type="button">
+                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.2425 11.5575C19.6291 11.5575 19.9425 11.2441 19.9425 10.8575V10.1425C19.9425 9.7559 19.6291 9.4425 19.2425 9.4425H12.2575C11.8709 9.4425 11.5575 9.1291 11.5575 8.7425V1.7575C11.5575 1.3709 11.2441 1.0575 10.8575 1.0575H10.1425C9.7559 1.0575 9.4425 1.3709 9.4425 1.7575V8.7425C9.4425 9.1291 9.1291 9.4425 8.7425 9.4425H1.7575C1.3709 9.4425 1.0575 9.7559 1.0575 10.1425L1.0575 10.8575C1.0575 11.2441 1.3709 11.5575 1.7575 11.5575H8.7425C9.1291 11.5575 9.4425 11.8709 9.4425 12.2575L9.4425 19.2425C9.4425 19.6291 9.7559 19.9425 10.1425 19.9425H10.8575C11.2441 19.9425 11.5575 19.6291 11.5575 19.2425V12.2575C11.5575 11.8709 11.8709 11.5575 12.2575 11.5575H19.2425Z" fill="#6080AF"/>
+                                    </svg>
+                                </button>
+                            </fieldset>
+                        </div>
+                        <button class="person__btn btn btn-blue">Отправить заявку</button>
+                        <div class="person__check check">
+                            <input type="checkbox">
+                            <label>
+                                Нажимая кнопку, я соглашаюсь с <a href="">правилами пользования сайтом III Всероссийской просветительской онлайн-экспедицией «Моя страна – моя Россия» и с политикой обработки и защиты персональных данных</a>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            @@include('components/page-blocks/_footer.html')
+        </footer>
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

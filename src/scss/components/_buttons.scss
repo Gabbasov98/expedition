@@ -1,0 +1,123 @@
+@import "../vars";
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-out .225s;
+    padding: 0;
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.btn-red{
+    height: 64px;
+    background-color: $deepRed;
+    color: $lightNud;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 22px;
+    &:hover{
+        color: $lightNud;
+        background-color: $lightRed;
+    }
+}
+
+.btn-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-toggle{
+        font-weight: 500;
+        font-size: 19px;
+        color: $middleBlue;
+        display: flex;
+        align-items: center;
+        height: 64px;
+        justify-content: center;
+        svg{
+            margin-right: 14px;
+        }
+        &:hover{
+            color: $lightBlue;
+            path{
+                fill:$lightBlue;
+            }
+        }
+    }
+}
+
+.brown-link{
+    display: flex;
+    align-items: center;
+    &__toggle{
+        font-size: 16px;
+        color: $middleBrown;
+        display: flex;
+        align-items: center;
+        height: 37px;
+        svg{
+            margin-left: 6px;
+        }
+        &:hover{
+            color: $middleBrownHover;
+            path{
+                fill:$middleBrownHover;
+            }
+        }
+    }
+}
+
+.btn-white-outline{
+    border: 2px solid $lightBlue;
+    font-weight: 500;
+    font-size: 19px;
+    color: $lightBlue;
+    border-radius: 50px;
+    &:hover{
+        background-color: $lightBlue;
+        color: $deepDarkBlue;
+        path{
+            fill:$deepDarkBlue;
+        }
+    }
+}
+
+.btn-blue{
+    border-radius: 50px;
+    background-color: $darkBlue;
+    color: $textLight;
+    font-weight: 500;
+    font-size: 19px;
+    &:hover{
+        color: $textLight;
+        background-color: $middleBlue;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .btn-red{
+        font-size: 17px;
+        height: 54px;
+    }
+
+    .btn-link{
+        &-toggle{
+            height: 56px;
+            font-size: 13px;
+            svg{
+                margin-right: 7px;
+            }
+        }
+    }
+
+    .brown-link{
+        &__toggle{
+            font-size: 14px;
+        }
+    }
+
+    .btn-white-outline{
+        font-size: 15px;
+    }
+}

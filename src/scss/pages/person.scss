@@ -1,0 +1,153 @@
+.person{
+  padding-bottom: 93px;
+  .container{
+    max-width: 100%;
+  }
+  &__title{
+    color: $middleBlue;
+    max-width: 420px;
+  }
+  &__inner,
+  &__thank{
+    background-color: $thinBlue;
+    border-radius: 48px;
+    margin: 62px auto 0;
+    max-width: 950px;
+    width: 100%;
+  }
+  &__thank{
+    padding: 120px 90px;
+  }
+  &__inner{
+    padding: 60px 68px 88px;
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 24px;
+  }
+  &__fio{
+    display: grid;
+    grid-template-columns: 1.35fr .9fr 1.1fr;
+    gap: 22px 26px;
+  }
+  &__region{
+    max-width: 540px;
+  }
+  &__double{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  &__contacts{
+    display: grid;
+    grid-template-columns: .9fr 1.21fr 1.39fr;
+    gap: 22px 26px;
+  }
+  &__group{
+    position: relative;
+    input{
+      padding-right: 65px;
+    }
+  }
+  &__field{
+    position: relative;
+    &:not(:last-child){
+      margin-bottom: 17px;
+    }
+  }
+  &__remove-field,
+  &__add-field{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg{
+      width: 30px;
+      height: auto;
+    }
+  }
+  &__remove-field{
+    span{
+      border-radius: 3px;
+      width: 26px;
+      height: 3px;
+      display: block;
+      background-color: $lightBlue;
+    }
+  }
+  &__btn{
+    max-width: 100%;
+    width: 362px;
+    height: 64px;
+    margin: 27px auto 0;
+  }
+  &__desc{
+    margin-top: 30px;
+  }
+  &__back{
+    margin: 74px auto 0;
+    width: 267px;
+    height: 64px;
+    max-width: 100%;
+    svg{
+      margin-right: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px){
+  .person{
+    padding-bottom: 48px;
+    &__title{
+      max-width: 290px;
+    }
+    &__thank,
+    &__inner{
+      padding: 31px 16px 38px;
+      border-radius: 20px;
+      margin-top: 28px;
+    }
+    &__inner{
+      gap: 22px;
+    }
+    &__double,
+    &__contacts,
+    &__fio{
+      grid-template-columns: 100%;
+      gap: 22px;
+    }
+    &__region{
+      max-width: 100%;
+    }
+    &__back,
+    &__btn{
+      margin-top: 24px;
+      height: 54px;
+      font-size: 17px;
+    }
+    &__group{
+      input{
+        padding-right: 55px;
+      }
+    }
+    &__remove-field,
+    &__add-field{
+      width: 52px;
+      height: 52px;
+      svg{
+        width: 21px;
+      }
+      span{
+        width: 19px;
+      }
+    }
+    &__desc{
+      margin-top: 14px;
+    }
+  }
+}
+
+
